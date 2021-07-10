@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canvas</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body class="body_backgorund">
+		<center>
+			<h1>My First Canvas</h1>
+			<canvas id="myCanvas" width="800" height="400"></canvas><br>
+			<div class="grid">
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn red" onclick="color = 'red';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn orange" onclick="color = 'orange';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn yellow" onclick="color = 'yellow';"></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn green" onclick="color = 'green';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn cyan" onclick="color = 'cyan';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn blue" onclick="color = 'blue';"></button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn indigo" onclick="color = 'indigo';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn violet" onclick="color = 'purple';"></button>
+					</div>
+					<div class="col">
+						<button type="button" class="btn black" onclick="color = 'black';"></button>
+					</div>
+				</div>
+			</div>
+			<div class="row myrow">
+				<div class="col">
+					<button type="button" style="height: 1px; width: 75px; background-color: black;" onclick="linew = 1"></button>
+				</div>
+				<div class="col">
+					<button type="button" style="height: 2px; width: 75px; background-color: black;" onclick="linew = 2"></button>
+				</div>
+				<div class="col">
+					<button type="button" style="height: 4px; width: 75px; background-color: black;" onclick="linew = 4"></button>
+				</div>
+				<div class="col">
+					<button type="button" style="height: 8px; width: 75px; background-color: black;" onclick="linew = 8"></button>
+				</div>
+			</div>
+			<button onclick="clearArea();" id="clear">Clear</button>
+		</center>
+		<script src="main.js"></script>
+	</body>
+</html>

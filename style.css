@@ -1,0 +1,47 @@
+.body_backgorund {
+  background-image: url("bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+}
+
+h1{
+	color:blue; 
+	font-size: 30px;
+}
+
+#myCanvas{
+	border-width:20px;
+	background-color:azure; 
+	border-style:solid;
+	cursor: crosshair;
+}
+
+span{
+	font-size: 20px;
+}
+
+.grid {
+	margin: 25px 44.3%;
+}
+
+.col {
+	padding: 5px;
+}
+
+.row {
+	display: flex;
+}
+
+.btn {border-radius: 50%; height: 40px; width: 40px; cursor: pointer; border: 5px solid #4d75ff;}
+
+.red {background-color: #f00;} .orange {background-color: #f70;} .yellow {background-color: #ff0;}
+.green {background-color: #0f0;} .cyan {background-color: #0ff;} .blue {background-color: #00f;}
+.indigo {background-color: #4b0082;} .violet {background-color: #800080;} .black {background-color: #000;}
+
+#clear {height: 40px; width: 70px; border: 2px solid #000; background-color: transparent; color: #000; cursor: pointer; border-radius: 5px; transition: background 0.4s, color 0.4s;} #clear:hover {background-color: #000; color: #fff;}
+
+[type="button"] {cursor: pointer; border: none; outline: none;}
+
+.myrow {margin: 20px 37.5%;}
