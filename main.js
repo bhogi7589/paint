@@ -33,8 +33,8 @@ function my_mousemove(e){
 canvas.addEventListener("touchmove", my_touchmove);
 
 function my_touchmove(e){
-    currentx = e.touches[i].clientX - canvas.offsetLeft;
-    currenty = e.touches[i].clientY - canvas.offsetTop;
+    currentx = e.touches[0].clientX - canvas.offsetLeft;
+    currenty = e.touches[0].clientY - canvas.offsetTop;
     ctx.beginPath();
     ctx.strokeStyle = color;
     ctx.lineWidth = linew;
