@@ -33,18 +33,16 @@ function my_mousemove(e){
 canvas.addEventListener("touchmove", my_touchmove);
 
 function my_touchmove(e){
-    for (var i = 0; i < e.touches.length; i++){
-        currentx = e.touches[i].clientX - canvas.offsetLeft;
-        currenty = e.touches[i].clientY - canvas.offsetTop;
-        ctx.beginPath();
-        ctx.strokeStyle = color;
-        ctx.lineWidth = linew;
-        ctx.moveTo(lastx, lasty);
-        ctx.lineTo(currentx, currenty);
-        ctx.stroke();
-        lastx = currentx;
-        lasty = currenty;
-    }
+    currentx = e.touches[i].clientX - canvas.offsetLeft;
+    currenty = e.touches[i].clientY - canvas.offsetTop;
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = linew;
+    ctx.moveTo(lastx, lasty);
+    ctx.lineTo(currentx, currenty);
+    ctx.stroke();
+    lastx = currentx;
+    lasty = currenty;
 }
 
 function mouseup(e){
