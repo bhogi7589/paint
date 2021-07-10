@@ -13,6 +13,13 @@ function my_mousedown(e){
     mouseevent = "mousedown";
 }
 
+canvas.addEventListener("touchstart", my_touchdown);
+
+function my_touchdown(e){
+    lastx = e.touches[0].clientX - canvas.offsetLeft;
+    lasty = e.touches[0].clientY - canvas.offsetTop;
+}
+
 canvas.addEventListener("mousemove", my_mousemove);
 
 function my_mousemove(e){
